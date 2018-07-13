@@ -1,6 +1,8 @@
 # monitor-rabbitmq
 AWS Cloudwatch for rabbitmq
 
+RabbitMQ monitoring with cloudwatch namespace as `Resource/RabbitMQ`. Each metric has the name that of the queue with count that of their existing message count. A special metric named `TotalMessages` that measures total number of messages in all queues. 
+
 ## Setup Environment variables
 ```bash
 RABBIT_MQ_URL = 'http://localhost:15672' # default
